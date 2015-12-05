@@ -1,0 +1,26 @@
+const a=45,b=27;
+var x,y,g,m:integer;
+procedure swap(var x,y:integer);
+	var temp:integer;
+	begin
+		temp:=x;
+		x:=y;
+		y:=temp
+	end;
+procedure mod(var x,y:integer);
+	begin
+		x:=x-x/y*y
+	end;
+begin
+	x:=a;
+	y:=b;
+	mod(x,y);
+	repeat
+		swap(x,y);
+		mod(x,y)
+	until x=0;
+	g:=y;
+	m:=a*b/g;
+	write("9->",g);
+	write("135->",m)
+end.

@@ -1,0 +1,18 @@
+var x,y:integer;
+begin
+	x:=3;
+	if x=3 then
+		y:=x
+	else
+		y:=5;
+	write("y1:",y);
+	for x:=5 to 10 do
+	begin
+		y:=y+1
+	end;
+	write("y2:",y);
+	repeat
+		y:=y+1
+	until y=13;
+	write("y3:",y)
+end.

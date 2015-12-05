@@ -1,0 +1,67 @@
+const T=1,F=0,letterA='A';
+var x,y,g,m,n,p:integer;
+	i:integer;
+	a,b:array[20] of integer;
+	c1,c2,cc:char;
+	r1,r2,r3:real;
+procedure swap();
+	var temp:integer;
+	begin
+		temp:=x;
+		x:=y;
+		y:=temp
+	end;
+procedure swap1(var r1,r2:integer);
+	var temp:integer;
+	begin
+		temp:=x;
+		x:=y;
+		y:=temp
+	end;
+function mod(var x,y:integer):integer;
+	begin
+		x:=x-x/y*y;
+		mod:=x
+	end;
+procedure pro1(x,y:integer);
+	begin
+		x:=x+1;
+		y:=y+1;
+		if x<3 then
+			pro1(x,y)
+	end;
+begin
+	write("afsdfasdf");
+	for i:=3 downto T do
+	begin
+		write("input x: ");
+		read(x);
+		write("input y: ");
+		read(y);
+		x:=mod(x,y);
+		repeat
+			swap();
+			x:=mod(x,y)
+		until x=0;
+	 	write("x mod y = ",y)
+  	end;
+  	write("input a integer number");
+  	read(m);
+  	if m<5 then
+  		repeat 
+  			m:=m+3
+  		until m>=5
+  	else
+  		for i:=1 to 5 do
+  		begin
+  			a[i]:=m;
+  			m:=m+1
+  		end;
+  	write(a[5]);
+  	write("input two real number");
+  	read(r1,r2);
+  	write((r1+r2));
+  	swap1(r1,r2);
+  	write(r1);
+  	pro1(1,2)
+end.

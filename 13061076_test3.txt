@@ -1,0 +1,15 @@
+const a=3,c='c';
+var d:real;
+	b:integer;
+	e:array [5] of integer;
+begin
+	write(a);
+	d:=3.33;
+	write(d);
+	e[1]:=6;
+	write(e[1]);
+	write(e[2]);
+	write(c);
+	read(b);
+	write(b)
+end.

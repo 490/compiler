@@ -1,0 +1,11 @@
+var x:integer; 
+procedure p1(var a:integer);
+	begin
+		write(a);
+		a:=88
+	end;
+begin
+	x:=44;
+	p1(x);
+	write(x)
+end.

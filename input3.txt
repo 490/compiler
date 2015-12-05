@@ -1,0 +1,12 @@
+var x,y:integer;
+function f1(x,y:integer):integer;
+	var z:integer;
+	begin
+		write(x);
+		f1:=x+y
+	end;
+begin
+	x:=f1(3,5);
+	write(x);
+	write(y);
+end.
